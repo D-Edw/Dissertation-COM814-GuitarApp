@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border"
+    tools:context=".controllers.teacher.studentList.StudentListActivity"
+    android:padding="@dimen/_3sdp"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:text="@string/update_student"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        app:fontFamily="@font/helvetica_neue_ultralight"
+        />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/edittext_bottom_line"
+        android:ems="10"
+        android:hint="@string/name"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="@dimen/_9sdp"
+        android:visibility="visible"
+        app:fontFamily="@font/helvetica_neue_light" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/edittext_bottom_line"
+        android:ems="10"
+        android:hint="@string/email"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/white"
+        android:textColorHint="@color/white"
+        android:textColorLink="@color/white"
+        android:textSize="@dimen/_9sdp"
+        android:visibility="visible"
+        app:fontFamily="@font/helvetica_neue_light" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_button"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_20sdp"
+        app:fontFamily="@font/helvetica_neue_ultralight" />
+
+
+</LinearLayout>

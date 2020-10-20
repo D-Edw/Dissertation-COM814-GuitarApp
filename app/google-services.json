@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "698984951991",
+    "firebase_url": "https://dissertation814.firebaseio.com",
+    "project_id": "dissertation814",
+    "storage_bucket": "dissertation814.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698984951991:android:360fd640ebbc591d2d1d32",
+        "android_client_info": {
+          "package_name": "com.example.dissertation814"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698984951991-1f2u1o9pm7648a73mmlsgisrsrbrg00g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dissertation814",
+            "certificate_hash": "905753e2a2c9ec80717dfe31061d6f0af2ce4784"
+          }
+        },
+        {
+          "client_id": "698984951991-p5ji3soch1idl1qkorbaicaq7tm6nbbj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUH4XyqxEfcngQPCq9SxisPNqxqaoc-BI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698984951991-p5ji3soch1idl1qkorbaicaq7tm6nbbj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

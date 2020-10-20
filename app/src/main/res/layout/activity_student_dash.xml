@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".controllers.student.StudentDashActivity"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/dashboardTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/your_dashboard"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
+        app:fontFamily="@font/helvetica_neue_ultralight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/accountImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/black"
+        android:src="@drawable/detailsbtnfinal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardTextView"
+        android:contentDescription="@string/accountbutton"
+        android:onClick="onDetails"/>
+
+    <ImageButton
+        android:id="@+id/lessonsImageButton"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:background="@color/black"
+        android:contentDescription="@string/lessonsbutton"
+        android:src="@drawable/lessons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/accountImageButton"
+        android:onClick="onLessons"/>
+
+    <ImageButton
+        android:id="@+id/createImageButton"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:background="@color/black"
+        android:contentDescription="@string/homeworkbutton"
+        android:src="@drawable/homework"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/lessonsImageButton"
+        app:layout_constraintTop_toBottomOf="@id/accountImageButton"
+        android:onClick="onHomework"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

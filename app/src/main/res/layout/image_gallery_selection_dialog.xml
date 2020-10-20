@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border"
+    tools:context=".controllers.teacher.create.CreateActivity"
+    android:padding="@dimen/_3sdp"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/what_image_would_you_like_to_add"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        app:fontFamily="@font/helvetica_neue_thin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_52sdp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/_5sdp">
+
+        <Button
+            android:id="@+id/chordButton"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/custom_button"
+            android:text="@string/chord"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_20sdp"
+            app:fontFamily="@font/helvetica_neue_ultralight" />
+
+        <Button
+            android:id="@+id/scaleButton"
+            android:layout_width="@dimen/_115sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:background="@drawable/custom_button"
+            android:text="@string/scale"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_20sdp"
+            app:fontFamily="@font/helvetica_neue_ultralight" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/arpeggioButton"
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/custom_button"
+        android:text="@string/arpeggio"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/_20sdp"
+        app:fontFamily="@font/helvetica_neue_ultralight" />
+
+
+</LinearLayout>

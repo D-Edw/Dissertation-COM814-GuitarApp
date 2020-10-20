@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".controllers.teacher.TeacherDashActivity"
+    android:focusableInTouchMode="true">
+
+
+    <TextView
+        android:id="@+id/dashboardTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/your_dashboard"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
+        app:fontFamily="@font/helvetica_neue_ultralight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/accountImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@color/black"
+        android:contentDescription="@string/accountbutton"
+        android:onClick="onDetails"
+        android:src="@drawable/detailsbtnfinal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dashboardTextView" />
+
+    <ImageButton
+        android:id="@+id/studentsImageButton"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@color/black"
+        android:src="@drawable/students_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/accountImageButton"
+        android:contentDescription="@string/studentsbutton"
+        android:onClick="onStudentListClicked"/>
+
+    <ImageButton
+        android:id="@+id/createImageButton"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@color/black"
+        android:src="@drawable/create_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/studentsImageButton"
+        app:layout_constraintTop_toBottomOf="@id/accountImageButton"
+        android:contentDescription="@string/createbutton"
+        android:onClick="onCreateClicked"/>
+
+    <ImageButton
+        android:id="@+id/filesImageButton"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@color/black"
+        android:contentDescription="@string/filesbutton"
+        android:onClick="onYourFilesClicked"
+        android:src="@drawable/your_files"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createImageButton"
+        app:layout_constraintVertical_bias="0.09" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

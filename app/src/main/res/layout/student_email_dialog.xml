@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/border"
+    tools:context=".controllers.teacher.yourFiles.YourFilesActivity"
+    android:padding="@dimen/_3sdp"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="@dimen/_115sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:text="@string/select_student"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_20sdp"
+        app:fontFamily="@font/helvetica_neue_thin"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/studentEmailRv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:background="@color/black"
+        android:layout_marginTop="@dimen/_5sdp"/>
+
+
+
+
+</LinearLayout>
